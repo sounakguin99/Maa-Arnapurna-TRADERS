@@ -22,7 +22,7 @@ export default function TermsConditionsPage() {
       </section>
 
       {/* Content Section */}
-      <section className="py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <section className="py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="prose prose-lg md:prose-xl prose-orange text-gray-600">
           <p className="lead">
             Welcome to Maa Arnapurna TRADERS! By accessing this website we

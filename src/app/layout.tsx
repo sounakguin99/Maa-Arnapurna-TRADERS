@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { Providers } from "@/components/Providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,10 +22,6 @@ export const metadata: Metadata = {
   },
 };
 
-import { Providers } from "@/components/Providers";
-
-// ... (existing imports)
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,3 +38,4 @@ export default function RootLayout({
     </html>
   );
 }
+// Forced Rebuild

@@ -11,7 +11,7 @@ export default function ContactUsPage() {
       {/* Hero Section - Matching the theme */}
       <section className="mt-[112px] md:mt-[120px] bg-[#fdfaf5] py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-4">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-3xl md:text-5xl  font-bold text-gray-900 leading-tight">
             Contact Us
           </h1>
           <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -72,10 +72,10 @@ export default function ContactUsPage() {
               <div className="space-y-1">
                 <h4 className="font-bold text-gray-900">Email</h4>
                 <a
-                  href="mailto:Subrajitmandal250@gmail.com"
+                  href="mailto:subrajitmandal250@gmail.com"
                   className="text-gray-600 break-all hover:text-[#e67e22] transition-colors"
                 >
-                  Subrajitmandal250@gmail.com
+                  subrajitmandal250@gmail.com
                 </a>
               </div>
             </div>
@@ -235,17 +235,19 @@ export default function ContactUsPage() {
       </section>
 
       {/* Map Section */}
-      <section className="w-full h-[500px] bg-gray-100">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.6768192232657!2d88.56739429999999!3d23.181992599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8c4b25ef3bc8d%3A0xb7b170a1361963a9!2sRanaghat%20Happy%20Club%20Maidan%2F%20Tarun%20Bayam%20Samiti%20School%20Of%20Cricket!5e0!3m2!1sen!2sin!4v1769961070858!5m2!1sen!2sin"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Google Maps Location"
-        ></iframe>
+      <section className="max-w-7xl  xl:max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+        <div className="w-full h-[700px] bg-gray-100 rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.6768192232657!2d88.56739429999999!3d23.181992599999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8c4b25ef3bc8d%3A0xb7b170a1361963a9!2sRanaghat%20Happy%20Club%20Maidan%2F%20Tarun%20Bayam%20Samiti%20School%20Of%20Cricket!5e0!3m2!1sen!2sin!4v1769961070858!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Google Maps Location"
+          ></iframe>
+        </div>
       </section>
 
       <Footer />

@@ -17,7 +17,7 @@ export default function Navbar() {
         <div className="w-full xl:pl-16 xl:pr-16 mx-auto flex  flex-col md:flex-row justify-between items-center text-xs md:text-sm gap-2">
           <div className="flex items-center space-x-4">
             <a
-              href="mailto:Subrajitmandal250@gmail.com"
+              href="mailto:subrajitmandal250@gmail.com"
               className="flex items-center gap-1 hover:text-orange-100 transition-colors"
             >
               <svg
@@ -34,7 +34,7 @@ export default function Navbar() {
                   d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                 />
               </svg>
-              Subrajitmandal250@gmail.com
+              subrajitmandal250@gmail.com
             </a>
             <a
               href="tel:+916294792340"

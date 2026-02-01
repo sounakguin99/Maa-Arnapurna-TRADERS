@@ -1,6 +1,9 @@
 import Navbar from "@/components/Navbar";
 import HeroSlider from "@/components/HeroSlider";
 import Footer from "@/components/Footer";
+import Newsletter from "@/components/Newsletter";
+import Testimonials from "@/components/Testimonials";
+import FAQ from "@/components/FAQ";
 import Image from "next/image";
 
 export default function Home() {
@@ -64,10 +67,21 @@ export default function Home() {
               </p>
             </div>
 
-            <button className="group text-[#e67e22] font-bold text-lg hover:text-[#d35400] flex items-center gap-3 transition-all">
+            <button className="group bg-[#e67e22] text-white font-bold text-lg px-8 py-3 rounded-full hover:bg-[#d35400] flex items-center gap-3 transition-all shadow-md active:scale-95">
               Read Our Story
-              <span className="bg-orange-50 p-2 rounded-full group-hover:translate-x-2 transition-transform">
-                &rarr;
+              <span className="bg-white/20 p-1 rounded-full group-hover:translate-x-1 transition-transform">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
               </span>
             </button>
           </div>
@@ -292,21 +306,102 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-[#e67e22] py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <h2 className="text-4xl md:text-6xl font-extrabold text-white">
-            Ready to Start Importing?
-          </h2>
-          <p className="text-orange-50 text-xl md:text-2xl font-light">
-            Get in touch with us today for a catalog and price quote. We are
-            here to serve your business needs.
-          </p>
-          <button className="bg-white text-[#e67e22] px-12 py-5 rounded-xl font-black text-xl hover:bg-orange-50 transition-colors shadow-2xl hover:scale-105 active:scale-95 transition-transform">
-            Contact Us Now
-          </button>
+      {/* Global Reach Section */}
+      <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl xl:max-w-[1440px] mx-auto text-center">
+          <div className="mb-12 md:mb-16 space-y-4">
+            <div className="inline-block px-4 py-1 rounded-full bg-orange-100 text-[#e67e22] font-bold text-xs uppercase tracking-widest mb-2">
+              Global Presence
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+              Exporting to the World
+            </h2>
+            <p className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+              Delivering excellence across borders. We proudly serve major
+              markets with our premium Indian craftsmanship.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
+            {[
+              { name: "USA", flag: "🇺🇸", region: "North America" },
+              { name: "UK", flag: "🇬🇧", region: "Europe" },
+              { name: "Germany", flag: "🇩🇪", region: "Europe" },
+              { name: "Australia", flag: "🇦🇺", region: "Oceania" },
+              { name: "UAE", flag: "🇦🇪", region: "Middle East" },
+              { name: "Canada", flag: "🇨🇦", region: "North America" },
+              { name: "France", flag: "🇫🇷", region: "Europe" },
+            ].map((country, idx) => (
+              <div
+                key={idx}
+                className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-xl border border-gray-100 hover:border-orange-100 transition-all duration-300 group flex flex-col items-center hover:-translate-y-1"
+              >
+                <div className="text-5xl md:text-6xl mb-4 group-hover:scale-110 transition-transform duration-300 filter grayscale group-hover:grayscale-0">
+                  {country.flag}
+                </div>
+                <h3 className="font-bold text-gray-800 text-sm md:text-base group-hover:text-[#e67e22] transition-colors">
+                  {country.name}
+                </h3>
+                <span className="text-xs text-gray-400 font-medium mt-1">
+                  {country.region}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
+
+      {/* Sustainability Impact Section */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-green-50">
+        <div className="max-w-7xl xl:max-w-[1440px] mx-auto">
+          <div className="text-center mb-16 space-y-4">
+            <span className="text-green-600 font-bold uppercase tracking-[0.2em] text-sm md:text-base">
+              Our Impact
+            </span>
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+              Committed to a Greener Future
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div className="p-8 bg-white rounded-2xl shadow-sm border border-green-100 hover:shadow-md transition-all">
+              <div className="text-5xl mb-4">🌱</div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                100% Biodegradable
+              </h3>
+              <p className="text-gray-600">
+                Our jute bags naturally decompose, leaving zero plastic waste
+                behind.
+              </p>
+            </div>
+            <div className="p-8 bg-white rounded-2xl shadow-sm border border-green-100 hover:shadow-md transition-all">
+              <div className="text-5xl mb-4">🤝</div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Fair Trade
+              </h3>
+              <p className="text-gray-600">
+                Empowering local artisans with fair wages and safe working
+                conditions.
+              </p>
+            </div>
+            <div className="p-8 bg-white rounded-2xl shadow-sm border border-green-100 hover:shadow-md transition-all">
+              <div className="text-5xl mb-4">♻️</div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                Sustainable Sourcing
+              </h3>
+              <p className="text-gray-600">
+                Ethically sourced leather that meets strict environmental
+                standards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Testimonials />
+
+      <FAQ />
+
+      <Newsletter />
 
       <Footer />
     </main>

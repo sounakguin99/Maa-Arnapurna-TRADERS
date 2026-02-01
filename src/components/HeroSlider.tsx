@@ -95,9 +95,12 @@ export default function HeroSlider() {
                     >
                       Request a Quote
                     </button>
-                    <div className="bg-white px-8 md:px-10 py-3 md:py-3.5 rounded-lg w-full sm:w-auto h-[48px] md:h-[52px] min-w-[160px]">
-                      {/* Empty white box */}
-                    </div>
+                    <a
+                      href="/about"
+                      className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 md:px-10 md:py-3.5 rounded-lg font-bold text-sm md:text-base lg:text-lg transition-all shadow-lg active:scale-95 text-center flex items-center justify-center min-w-[160px]"
+                    >
+                      Learn About Us
+                    </a>
                   </div>
                 </div>
               </div>

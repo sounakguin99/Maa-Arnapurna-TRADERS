@@ -12,7 +12,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="mt-[112px] md:mt-[120px] bg-[#fdfaf5] py-12 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-4">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
             About Maa Arnapurna <span className="text-[#e67e22]">TRADERS</span>
           </h1>
           <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
@@ -199,16 +199,138 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="bg-[#e67e22] py-16 px-4">
-        <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white text-center md:text-left leading-tight">
-            Want to know more <br className="hidden md:block" /> about our
-            products?
-          </h2>
-          <button className="bg-white text-[#e67e22] px-10 py-4 rounded-xl font-black text-lg hover:bg-orange-50 transition-colors shadow-xl hover:scale-105 active:scale-95 transition-transform shrink-0">
-            Contact Us
-          </button>
+      {/* How We Work Section */}
+      <section className="py-24 px-4 sm:px-6 lg:px-8 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <div className="inline-block px-4 py-1 rounded-full bg-orange-100 text-[#e67e22] font-bold text-xs uppercase tracking-widest mb-3">
+              Our Process
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+              Seamless Operations
+            </h2>
+            <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+              From the initial inquiry to the final delivery, our streamlined
+              process ensures you get exactly what you need, on time.
+            </p>
+          </div>
+
+          <div className="relative grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="hidden md:block absolute top-8 left-0 w-full h-0.5 bg-gray-100 z-0"></div>
+            {[
+              {
+                title: "Consultation",
+                desc: "Understanding your specifications, materials, and quantity requirements.",
+                icon: "01",
+              },
+              {
+                title: "Prototyping",
+                desc: "Developing a sample for your approval to match your exact standards.",
+                icon: "02",
+              },
+              {
+                title: "Manufacturing",
+                desc: "Ethical production with rigorous quality checks at every stage.",
+                icon: "03",
+              },
+              {
+                title: "Global Logistics",
+                desc: "Handling customs and shipping for a hassle-free delivery to your port.",
+                icon: "04",
+              },
+            ].map((step, idx) => (
+              <div
+                key={idx}
+                className="relative z-10 bg-white p-6 pt-0 text-center group"
+              >
+                <div className="w-16 h-16 mx-auto bg-white border-4 border-[#e67e22] text-[#e67e22] rounded-full flex items-center justify-center text-xl font-bold mb-6 group-hover:bg-[#e67e22] group-hover:text-white transition-colors duration-300 shadow-sm">
+                  {step.icon}
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  {step.title}
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {step.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Infrastructure & Capabilities Section */}
+      <section className="bg-gray-900 py-20 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden">
+        {/* Decorative background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-gray-800 to-gray-900"></div>
+
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Built for Scale & Quality
+            </h2>
+            <p className="text-gray-300 text-lg leading-relaxed mb-8">
+              Our infrastructure is designed to handle bulk orders without
+              compromising on the finer details. We operate with a blend of
+              traditional craftsmanship and modern efficiency.
+            </p>
+
+            <div className="space-y-6">
+              {[
+                {
+                  title: "Warehousing Unit",
+                  desc: "Spacious storage facilities ensuring safety from moisture and damage.",
+                },
+                {
+                  title: "Quality Control Lab",
+                  desc: "Dedicated testing area for strength, color fastness, and finish.",
+                },
+                {
+                  title: "Packaging Division",
+                  desc: "Customized packaging solutions to ensure products arrive in pristine condition.",
+                },
+              ].map((item, idx) => (
+                <div key={idx} className="flex gap-4">
+                  <div className="w-12 h-12 shrink-0 bg-white/10 rounded-lg flex items-center justify-center text-[#e67e22]">
+                    <svg
+                      className="w-6 h-6"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold">{item.title}</h4>
+                    <p className="text-gray-400 text-sm mt-1">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 group">
+            <Image
+              src="/slider2.jpeg"
+              alt="Our Infrastructure"
+              fill
+              className="object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+            <div className="absolute bottom-6 left-6 right-6">
+              <p className="text-white/80 text-sm uppercase tracking-widest font-bold">
+                Maa Arnapurna TRADERS
+              </p>
+              <p className="text-white text-lg font-medium">
+                Exporting Excellence Since 2024
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

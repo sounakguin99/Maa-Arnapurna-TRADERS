@@ -9,9 +9,9 @@ export default function MissionVisionPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="mt-[112px] md:mt-[120px] bg-[#e67e22] py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-center text-white">
+      <section className="mt-[112px] md:mt-[120px] bg-[#fdfaf5] py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-center ">
         <div className="max-w-4xl mx-auto space-y-4">
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold animate-fade-in-down">
+          <h1 className="text-3xl md:text-5xl font-bold animate-fade-in-down">
             Mission & Vision
           </h1>
           <p className="text-base md:text-lg lg:text-xl font-medium opacity-90 animate-fade-in">

@@ -60,7 +60,7 @@ export default function PrivacyPolicyPage() {
             <li>Provide, operate, and maintain our website and services.</li>
             <li>Process your orders for Jute and Leather goods securely.</li>
             <li>
-              Improve, personalize, and expand our website's user experience.
+              Improve, personalize, and expand our website&apos;s user experience.
             </li>
             <li>Understand and analyze how you use our website.</li>
             <li>
@@ -78,7 +78,7 @@ export default function PrivacyPolicyPage() {
           <p>
             Maa Arnapurna TRADERS follows a standard procedure of using log
             files. These files log visitors when they visit websites. All
-            hosting companies do this and a part of hosting services' analytics.
+            hosting companies do this and a part of hosting services&apos; analytics.
             The information collected by log files includes internet protocol
             (IP) addresses, browser type, Internet Service Provider (ISP), date
             and time stamp, referring/exit pages, and possibly the number of
@@ -101,7 +101,7 @@ export default function PrivacyPolicyPage() {
             5. Third-Party Privacy Policies
           </h2>
           <p>
-            Maa Arnapurna TRADERS's Privacy Policy does not apply to other
+            Maa Arnapurna TRADERS&apos;s Privacy Policy does not apply to other
             advertisers or websites. Thus, we are advising you to consult the
             respective Privacy Policies of these third-party ad servers for more
             detailed information. It may include their practices and

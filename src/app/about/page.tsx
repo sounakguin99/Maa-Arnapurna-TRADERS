@@ -12,6 +12,10 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="mt-[112px] md:mt-[120px] bg-[#fdfaf5] py-12 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100/50 border border-orange-200 text-[#e67e22] text-sm font-semibold mb-4 mx-auto">
+            <span className="w-2 h-2 rounded-full bg-[#e67e22] animate-pulse"></span>
+            Our Journey & Heritage
+          </div>
           <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight">
             About Maa Arnapurna <span className="text-[#e67e22]">TRADERS</span>
           </h1>
@@ -47,7 +51,7 @@ export default function AboutPage() {
                 standards.
               </p>
               <p>
-                At Maa Arnapurna TRADERS, we don't just export goods; we build
+                At Maa Arnapurna TRADERS, we don&apos;t just export goods; we build
                 lasting partnerships. Our commitment to **transparent
                 communication**, **timely delivery**, and **uncompromising
                 quality** has made us a preferred partner for buyers,

@@ -11,6 +11,10 @@ export default function ContactUsPage() {
       {/* Hero Section - Matching the theme */}
       <section className="mt-[112px] md:mt-[120px] bg-[#fdfaf5] py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100/50 border border-orange-200 text-[#e67e22] text-sm font-semibold mb-4 mx-auto">
+            <span className="w-2 h-2 rounded-full bg-[#e67e22] animate-pulse"></span>
+            Get In Touch
+          </div>
           <h1 className="text-3xl md:text-5xl  font-bold text-gray-900 leading-tight">
             Contact Us
           </h1>
@@ -148,7 +152,7 @@ export default function ContactUsPage() {
                 Book Appointment
               </h2>
               <p className="text-gray-500">
-                We're here to help. If you've got a question, we'd love to chat.
+                We&apos;re here to help. If you&apos;ve got a question, we&apos;d love to chat.
               </p>
             </div>
 

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -99,52 +100,52 @@ export default function Footer() {
           <h4 className="text-lg font-bold text-[#e67e22]">Quick Links</h4>
           <ul className="space-y-3 text-gray-400 text-sm">
             <li>
-              <a
+              <Link
                 href="/"
                 className="hover:text-[#e67e22] transition-colors inline-block"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/about"
                 className="hover:text-[#e67e22] transition-colors inline-block"
               >
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/mission-and-vision"
                 className="hover:text-[#e67e22] transition-colors inline-block"
               >
                 Mission & Vision
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/contact-us"
                 className="hover:text-[#e67e22] transition-colors inline-block"
               >
                 Contact Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/privacy-policy"
                 className="hover:text-[#e67e22] transition-colors inline-block"
               >
                 Privacy Policy
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 href="/terms-and-conditions"
                 className="hover:text-[#e67e22] transition-colors inline-block"
               >
                 Terms & Conditions
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -264,19 +265,19 @@ export default function Footer() {
         <p>
           &copy; {new Date().getFullYear()} Maa Arnapurna TRADERS. All rights
           reserved. |{" "}
-          <a
+          <Link
             href="/privacy-policy"
             className="hover:text-[#e67e22] transition-colors"
           >
             Privacy Policy
-          </a>{" "}
+          </Link>{" "}
           |{" "}
-          <a
+          <Link
             href="/terms-and-conditions"
             className="hover:text-[#e67e22] transition-colors"
           >
             Terms & Conditions
-          </a>
+          </Link>
         </p>
       </div>
     </footer>

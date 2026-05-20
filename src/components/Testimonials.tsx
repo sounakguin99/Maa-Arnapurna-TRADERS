@@ -184,7 +184,7 @@ export default function Testimonials() {
                     ))}
                   </div>
                   <p className="text-gray-300 italic mb-6 leading-relaxed flex-grow">
-                    "{review.text}"
+                    &ldquo;{review.text}&rdquo;
                   </p>
                   <div className="flex items-center gap-4 mt-auto">
                     <div className="w-12 h-12 bg-gray-700 rounded-full flex items-center justify-center text-xl font-bold text-gray-400 group-hover:bg-[#e67e22] group-hover:text-white transition-colors">

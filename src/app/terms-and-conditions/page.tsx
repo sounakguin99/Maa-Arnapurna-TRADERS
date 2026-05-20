@@ -36,16 +36,16 @@ export default function TermsConditionsPage() {
           </h2>
           <ul className="list-disc pl-6 space-y-2 mt-4 mb-8">
             <li>
-              <strong>"Client", "You" and "Your"</strong> refers to you, the
+              <strong>&ldquo;Client&rdquo;, &ldquo;You&rdquo; and &ldquo;Your&rdquo;</strong> refers to you, the
               person log on this website and compliant to the Company’s terms
               and conditions.
             </li>
             <li>
-              <strong>"The Company", "Ourselves", "We", "Our" and "Us"</strong>,
+              <strong>&ldquo;The Company&rdquo;, &ldquo;Ourselves&rdquo;, &ldquo;We&rdquo;, &ldquo;Our&rdquo; and &ldquo;Us&rdquo;</strong>,
               refers to our Company, Maa Arnapurna TRADERS.
             </li>
             <li>
-              <strong>"Party", "Parties", or "Us"</strong>, refers to both the
+              <strong>&ldquo;Party&rdquo;, &ldquo;Parties&rdquo;, or &ldquo;Us&rdquo;</strong>, refers to both the
               Client and ourselves.
             </li>
           </ul>

@@ -9,9 +9,10 @@ export default function QuoteModal() {
 
   useEffect(() => {
     if (isModalOpen) {
-      setIsAnimating(true);
+      const animTimer = setTimeout(() => setIsAnimating(true), 0);
       // Prevent body scroll
       document.body.style.overflow = "hidden";
+      return () => clearTimeout(animTimer);
     } else {
       const timer = setTimeout(() => setIsAnimating(false), 300);
       document.body.style.overflow = "unset";
@@ -58,7 +59,7 @@ export default function QuoteModal() {
           </button>
           <h3 className="text-2xl font-bold">Request a Quote</h3>
           <p className="text-orange-100 mt-1 text-sm">
-            Fill out the form below and we'll get back to you shortly.
+            Fill out the form below and we&apos;ll get back to you shortly.
           </p>
         </div>
 
